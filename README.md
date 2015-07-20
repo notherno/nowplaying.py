@@ -49,3 +49,19 @@ You can rate the song with `-r` option like `-r 5`
 
 With `-q` option, this program doesn't tweet
 
+```bash
+$ python nowplaying.py -qr5 "Like it"
+[Amazon search result]
+THE VERY BEST OF EVERLASTING OLDIES volume1
+<http://www.amazon.co.jp/dp/B00LPJVTYG/>
+
+========================================================================
+#NowPlaying
+♪ Stand By Me − Ben E. King
+（The Very Best Of Everlasting Oldies）
+★★★★★
+http://www.amazon.co.jp/dp/B00LPJVTYG/
+
+Like it
+========================================================================
+```
