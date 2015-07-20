@@ -3,7 +3,7 @@ Tweets the tune now iTunes playing written in Python
 
 ## Dependency
 - Appscript (Python module for Mac OS X)
--- iTunes
+  - iTunes
 - xml
 - requests\_oauthlib
 - bottlenose
@@ -65,3 +65,15 @@ http://www.amazon.co.jp/dp/B00LPJVTYG/
 Like it
 ========================================================================
 ```
+
+## Customize
+
+You can modify `config.json` to change formats of NowPlaying.
+
+|title|Title of the song|
+|artist|Artist of the song|
+|album|Album title|
+|rating|Rating (if larger than one)|
+|comment|Comment from argument|
+|url|URL for Amazon product|
+|product|Amazon product name|
