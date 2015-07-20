@@ -70,6 +70,8 @@ Like it
 
 You can modify `config.json` to change formats of NowPlaying.
 
+| formatting option | description |
+|:--------|:----------|
 |title|Title of the song|
 |artist|Artist of the song|
 |album|Album title|
