@@ -1,0 +1,48 @@
+{
+    "amazon": {
+        // authorization keys
+        "access_key": "********************",
+        "secret_key": "****************************************",
+        "assoc_tag":  "************",
+        // Search options
+        "region": "JP",
+        "search_index": "Music",
+
+        // add query the artist name if the length of album name is less than this value
+        "threshold": 14
+    },
+    "twitter": {
+        // authorization keys
+        "consumer_key": "*************************",
+        "consumer_secret": "**************************************************",
+        "access_token": "**************************************************",
+        "access_token_secret": "*********************************************"
+    },
+    "appearance": {
+        "limits": {
+            // The maximum length of values
+            "title": 40,
+            "artist": 30,
+            "album": 45
+        },
+        "symbols": {
+            "rated_symbol": "★",
+            "not_rated_symbol": "☆",
+            "excerpt_symbol": "…"
+        },
+        // message ({status_code} can be formattable)
+        "tweet_success_message": "** Tweet succeeded! **",
+        "tweet_error_message": "((ERROR)) {status_code}",
+
+        // -- Format available --
+        //    title: Title
+        //    artist: Artist
+        //    album: Album title
+        //    rating: Rating (if larger than one)
+        //    comment: Comment from argument
+        //    url: URL for Amazon product
+        //    product: Amazon product name
+        "tweet_format": "#NowPlaying\n♪ {title} − {artist}\n（{album}）\n{rating}\n{url}\n\n{comment}",
+        "horizontal_line": 72
+    }
+}
