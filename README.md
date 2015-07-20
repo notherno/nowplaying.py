@@ -2,7 +2,8 @@
 Tweets the tune now iTunes playing written in Python
 
 ## Dependency
-- Appscript
+- Appscript (Python module for Mac OS X)
+-- iTunes
 - xml
 - requests\_oauthlib
 - bottlenose
@@ -25,4 +26,26 @@ Twitter REST API authorization keys
 - consumer_secret
 - access_token
 - access_token_secret
+
+## Usage
+
+Run this program and Tweets automatically the music now playing in your iTunes.
+
+Options are as follows
+
+```
+Usage: nowplaying.py [options] message
+
+Options:
+  -h, --help            show this help message and exit
+  -q, --quiet           don't tweet and just display information for the song
+                        now playing
+  -r RATING, --rate=RATING
+                        rate the song now playing
+  -n, --no-amazon       don't search product in Amazon API
+```
+
+You can rate the song with `-r` option like `-r 5`
+
+With `-q` option, this program doesn't tweet
 
