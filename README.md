@@ -1,10 +1,11 @@
 # nowplaying.py
-Tweets the tune now iTunes playing written in Python
+Tweets the tune now iTunes playing
 
 ## Dependency
+- Mac OS X
 - Appscript (Python module for Mac OS X)
   - iTunes
-- xml
+- lxml
 - requests\_oauthlib
 - bottlenose
 
@@ -70,12 +71,16 @@ Like it
 
 You can modify `config.json` to change formats of NowPlaying.
 
-| formatting option | description |
-|:--------|:----------|
-|title|Title of the song|
-|artist|Artist of the song|
-|album|Album title|
-|rating|Rating (if larger than one)|
-|comment|Comment from argument|
-|url|URL for Amazon product|
-|product|Amazon product name|
+### Format for Tweet text
+
+| formatting option | description                   |
+|:------------------|:------------------------------|
+|title              |Title of the song              |
+|artist             |Artist of the song             |
+|album              |Album title                    |
+|rating             |Rating (if larger than one)    |
+|comment            |Comment from argument          |
+|url                |URL for Amazon product         |
+|product            |Amazon product name            |
+
+
