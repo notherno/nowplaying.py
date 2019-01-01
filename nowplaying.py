@@ -70,11 +70,14 @@ if __name__ == '__main__':
     CONFIG_FILE = 'config.json'
     ENCODING = 'utf-8'
 
-    if not os.path.isfile(CONFIG_FILE):
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    config_path = current_dir + '/' + CONFIG_FILE
+
+    if not os.path.isfile(config_path):
         exit('ERROR: config.json does not exist')
 
     source = u''
-    for line in [l.strip() for l in open(CONFIG_FILE, 'r').read().decode(ENCODING).split('\n')]:
+    for line in [l.strip() for l in open(config_path, 'r').read().decode(ENCODING).split('\n')]:
         if line and line[0] != '/':
             source += line
 
